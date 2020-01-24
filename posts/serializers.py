@@ -3,6 +3,6 @@ from .models import Post
 
 class PostSerializer(serializers.ModelSerializer):
 
-    class meta:
+    class Meta:
         fields = ('id', 'author', 'title', 'body', 'created_at',)
         model = Post
